@@ -62,7 +62,7 @@ public class SessionManager {
 
     public Cookie findCookie(HttpServletRequest request, String cookieName) {
         Cookie[] cookies = request.getCookies();
-        if (cookies != null) {
+        if (cookies == null) {
             return null;
         }
 
